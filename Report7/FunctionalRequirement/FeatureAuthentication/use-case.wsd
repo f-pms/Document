@@ -1,0 +1,10 @@
+@startuml
+left to right direction
+actor "Unauthenticated User" as g
+
+rectangle RMS {
+  usecase "Login" as UC1
+}
+
+g --> UC1
+@enduml
