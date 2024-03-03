@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+actor "Monitor" as m
+actor "Administrator" as a
+actor "System Handler" as s
+
+rectangle RMS {
+ (Monitor production parameter) as mp
+ (Modify monitoring PLC address) as mm
+ (Stream production parameter from factory) as sm
+}
+
+s -- sm
+m -- mp
+a --|> m
+a -- mm
+
+@enduml
