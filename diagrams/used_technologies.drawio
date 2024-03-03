@@ -1,0 +1,43 @@
+<mxfile host="Electron" modified="2024-03-03T06:30:15.298Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="MgnJHjM1dErQ4d8OlGzG" version="23.1.5" type="device">
+  <diagram name="Page-1" id="NtzFpYLWmlgDByeVQqZW">
+    <mxGraphModel dx="4295" dy="1780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://bgasparotto.com/wp-content/uploads/2017/12/spring-boot-logo.png;" vertex="1" parent="1">
+          <mxGeometry x="-1600" y="80" width="304.76" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-9" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://brandslogos.com/wp-content/uploads/thumbs/microsoft-sql-server-logo-vector.svg;" vertex="1" parent="1">
+          <mxGeometry x="-1230" y="70" width="197.95" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-11" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/2/22/Hibernate_logo_a.png;" vertex="1" parent="1">
+          <mxGeometry x="-1600" y="280" width="468.47" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-12" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.liquibase.org/wp-content/uploads/2022/03/Liquibase-horizontal-orange.png;" vertex="1" parent="1">
+          <mxGeometry x="-1080" y="280" width="390" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-13" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://foundations.projectpythia.org/_images/GitHub-logo.png;" vertex="1" parent="1">
+          <mxGeometry x="-1610" y="490" width="302.22" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-14" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://plc4x.apache.org/images/apache_plc4x_logo.png;" vertex="1" parent="1">
+          <mxGeometry x="-960" y="76.5" width="512" height="167" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cloud.z.com/vn/wp-content/uploads/2023/02/image1-15.png;" vertex="1" parent="1">
+          <mxGeometry x="-623.98" y="250" width="266" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://logos-world.net/wp-content/uploads/2023/08/React-Symbol.png;" vertex="1" parent="1">
+          <mxGeometry x="-1280" y="500" width="382.23" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-21" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://1000logos.net/wp-content/uploads/2022/07/Kubernetes-Logo.png;" vertex="1" parent="1">
+          <mxGeometry x="-1610" y="782.5" width="373.33" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-23" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Netlify_logo_%282%29.svg/800px-Netlify_logo_%282%29.svg.png;" vertex="1" parent="1">
+          <mxGeometry x="-1186.67" y="782.5" width="562.69" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="gPLqRkZyAPX5d93ZNjEK-24" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://images.viblo.asia/df353aac-c838-466a-a812-af2a242ed773.png;" vertex="1" parent="1">
+          <mxGeometry x="-832.34" y="507.5" width="543.54" height="182.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
