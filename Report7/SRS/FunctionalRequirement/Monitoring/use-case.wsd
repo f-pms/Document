@@ -1,6 +1,6 @@
 @startuml
 left to right direction
-actor "Monitor" as m
+actor "Supervisor" as m
 actor "Administrator" as a
 
 rectangle RMS {
