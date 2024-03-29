@@ -1,6 +1,6 @@
 ```mermaid
 sequenceDiagram 
-  title "Tempdraft"
+  title PLC Integration 
   HbcScraper ->>+ PlcDataSource: get all tags 
   PlcDataSource ->>+ BlueprintPersistenceService: get all tags
   BlueprintPersistenceService ->>- PlcDataSource: return all tags
@@ -13,5 +13,4 @@ sequenceDiagram
   CronScrapeJob ->>- HbcScraper: return cron
   HbcScraper ->>+ ThreadPoolTaskScheduler: schedule(scrapperTask, cron)
   ThreadPoolTaskScheduler ->>- HbcScraper: return ScheduledFuture
-
 ```

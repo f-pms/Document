@@ -1,0 +1,27 @@
+@startuml
+|ReportController|
+start
+:validation (annotation)\n check allowed ranged on queryType;
+|ChartService|
+:getAll(ChartCriteria);
+|ReportRepository|
+:getAllReports(ChartCriteria);
+|ChartService|
+:loop and parse sum_json\n to Map<String, Double>;
+:get list indicator;
+:check queryType;
+if (is day) then
+:for each indicator;
+:for 1 to count;
+elseif (is week)
+:for each indicator;
+:reports.where(start, start + 1w)\nswap start end\nsum(x.indicator);
+elseif (is month)
+:for each indicator;
+:reports.where(start, start + 1m)\nswap start end\nsum(x.indicator);
+elseif (is year)
+:for for each indicator;
+:reports.where(start, start + 1y)\nswap start end\nsum(x.indicator);
+endif
+stop
+@enduml

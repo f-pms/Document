@@ -1,0 +1,89 @@
+<mxfile host="Electron" modified="2024-03-25T10:43:01.941Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="wlBR-C9DZmH-Cf-ICayq" version="24.0.4" type="device">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="1185" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-1" value="Every second" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;verticalAlign=bottom;labelPosition=center;verticalLabelPosition=top;align=center;size=65;" vertex="1" parent="1">
+          <mxGeometry x="20" y="360" width="35" height="528" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-2" value="MonitoringHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="220" y="360" width="156" height="528" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-16" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="EX1DVpAlgEGeSkpOyH1c-2">
+          <mxGeometry x="73" y="100" width="10" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-3" value="BlueprintPersistenceService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="465" y="360" width="212" height="528" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-4" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="EX1DVpAlgEGeSkpOyH1c-3">
+          <mxGeometry x="101" y="159" width="10" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-5" value="DataProcessor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="727" y="360" width="150" height="528" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-6" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="EX1DVpAlgEGeSkpOyH1c-5">
+          <mxGeometry x="70" y="263" width="10" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-7" value="WebSocketService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="927" y="360" width="150" height="528" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-8" value="loop" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#000000;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="286" y="704" width="729" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-9" value="[for each blueprint in blueprints list]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="EX1DVpAlgEGeSkpOyH1c-8">
+          <mxGeometry x="40" width="689" height="27.551020408163268" as="geometry" />
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-10" value="run()" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="EX1DVpAlgEGeSkpOyH1c-1" target="EX1DVpAlgEGeSkpOyH1c-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="207" y="467" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-11" value="getAllBlueprints()" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="EX1DVpAlgEGeSkpOyH1c-16" target="EX1DVpAlgEGeSkpOyH1c-4">
+          <mxGeometry x="0.0013" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="447" y="519" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-12" value="return blueprints" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="EX1DVpAlgEGeSkpOyH1c-4" target="EX1DVpAlgEGeSkpOyH1c-16">
+          <mxGeometry x="0.0013" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="445" y="571" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-13" value="process(plcData, blueprints)" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="EX1DVpAlgEGeSkpOyH1c-16" target="EX1DVpAlgEGeSkpOyH1c-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="563" y="623" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-14" value="return processedData" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="EX1DVpAlgEGeSkpOyH1c-6" target="EX1DVpAlgEGeSkpOyH1c-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="675" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-15" value="get then send processedData of the blueprint" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="663" y="782" />
+            </Array>
+            <mxPoint x="303" y="782" as="sourcePoint" />
+            <mxPoint x="997" y="782" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EX1DVpAlgEGeSkpOyH1c-17" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="1">
+          <mxGeometry x="997" y="782" width="10" height="27" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
