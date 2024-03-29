@@ -1,10 +1,10 @@
 @startuml
 left to right direction
-actor "Monitor" as m
+actor "Supervisor" as m
 actor "Administrator" as a
 
 rectangle RMS {
- (Monitor production parameter) as mp
+ (Monitor real-time production parameter) as mp
  (Modify monitoring PLC Tag) as mm
 }
 
