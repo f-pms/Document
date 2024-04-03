@@ -11,9 +11,8 @@ sequenceDiagram
   participant WebSocketService
   participant NotificationService
 
-
   par Triggering Alarm
-    Time ->>+ AlarmConditionHandler: handle()
+    Time ->> AlarmConditionHandler: handle()
     AlarmConditionHandler ->>+ AlarmPersistenceService: getAllConditions()
     AlarmPersistenceService ->>- AlarmConditionHandler: return conditions
     loop for each condition
@@ -21,11 +20,26 @@ sequenceDiagram
       AlarmStore ->>- AlarmConditionHandler: return is in holding conditions
     end
     AlarmConditionHandler ->>+ AlarmStore: process(matchedConditions, plcData)
-    AlarmStore ->>- AlarmConditionHandler: return holdingContions
-    AlarmConditionHandler ->>+ AlarmService: createHistories(holdingConditions)
-  and Resolving Alarm
-    Time ->>+ AlarmHistoryHandler: handle()
+    AlarmStore ->>- AlarmConditionHandler: return holdingConditions
+    AlarmConditionHandler ->> AlarmService: createHistories(holdingConditions)
   and Notifying Alarm
-    Time ->>+ AppScheduler: scheduleNotification()
+    Time ->> AppScheduler: scheduleNotification()
+    AppScheduler ->>+ AlarmPersistenceService: getAllHistoriesByStatus(AlarmStatus.TRIGGERED)
+    AlarmPersistenceService ->>- AppScheduler: return TRIGGERED histories
+    opt histories is not empty
+      AppScheduler ->> AlarmService: updateStatusHistories(histories, AlarmStatus.SENT)
+      AppScheduler ->> NotificationService: notify(histories)
+    end
+  and Resolving Alarm
+    Time ->> AlarmHistoryHandler: handle()
+    AlarmHistoryHandler ->>+ AlarmPersistenceService: getAllHistoriesByStatus(AlarmStatus.SENT)
+    AlarmPersistenceService -->>- AlarmHistoryHandler: return SENT histories
+    loop for each SENT history
+      AlarmHistoryHandler ->> AlarmHistoryHandler: add the history to the solvedHistories <br/> when the condition is met
+    end
+    AlarmHistoryHandler ->> AlarmService: updateStatusHistories(solvedHistories, AlarmStatus.RESOLVED)\
+    opt solvedHistories is not empty
+      AlarmHistoryHandler ->> WebSocketService: fireAlarm(Map.of())
+    end
   end
 ```
