@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-04T16:06:35.499Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" etag="_T_Kk_JiymogeAlnEhQw" version="24.2.2" type="google">
+<mxfile host="app.diagrams.net" modified="2024-04-04T16:16:44.286Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0" etag="8WYTKwN0shvPkpM6RzZm" version="24.2.2" type="google">
   <diagram name="Page-1" id="Y3-ZoNVP7fB7ggFjIZeu">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -265,11 +265,11 @@
         <mxCell id="UK-n1BO-FfAP6Dtml6JQ-67" value="[solvedHistories is not empty]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="UK-n1BO-FfAP6Dtml6JQ-66">
           <mxGeometry x="30" width="1295" height="19.17808219178082" as="geometry" />
         </mxCell>
-        <mxCell id="UK-n1BO-FfAP6Dtml6JQ-91" value="Fire an empty event when has solved alarm" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
-          <mxGeometry x="516" y="1526" width="1305" height="48" as="geometry" />
-        </mxCell>
         <mxCell id="UK-n1BO-FfAP6Dtml6JQ-109" value="" style="points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0}" vertex="1" parent="1">
           <mxGeometry x="1579" y="1400" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="UK-n1BO-FfAP6Dtml6JQ-111" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;Fire an empty event when has solved alarm&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="1">
+          <mxGeometry x="560" y="1530" width="1220" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
