@@ -1,6 +1,6 @@
 ```mermaid
 sequenceDiagram 
- title RMS - Alarm Handling Sequence
+  title RMS - Alarm Handling Sequence
   actor Time as Every second
   participant AlarmConditionHandler
   participant AlarmHistoryHandler
