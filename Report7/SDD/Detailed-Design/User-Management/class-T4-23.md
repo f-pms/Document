@@ -113,7 +113,7 @@ classDiagram
   UserPersistenceService ..> UserRepository
   UserPersistenceService ..> User
   UserRepository ..> UserEntity
-  CreateUserCommand *.. Role
-  User *-- Role
-  UserEntity *-- Role
+  CreateUserCommand --> Role
+  User --> Role
+  UserEntity --> Role
 ```

@@ -6,14 +6,14 @@ classDiagram
   namespace coreapi_event {
     class RmsHandler {
       <<interface>>
-      +handle(plcData) void
+      +handle(context, response) void
     }
 
     class MonitorHandler {
       -BlueprintPersistenceService blueprintService
       -DataProcessor dataProcessor
       -WebSocketService webSocketService
-      +handle(plcData) void
+      +handle(context, response) void
     }
 
   }
