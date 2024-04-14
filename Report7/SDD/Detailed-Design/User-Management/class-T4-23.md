@@ -14,6 +14,23 @@ classDiagram
     }
   }
 
+  namespace coreapi_controller_v1_request_auth {
+    class CreateUserCommand {
+      - String username
+      - String password
+      - String fullName
+      - String email
+      - Role role
+    }
+
+  class UpdateUserCommand {
+      - String oldPassword
+      - String password
+      - String fullName
+      - String email
+    }
+  }
+
   namespace coreapi_service_auth {
     class UserService {
       - UserPersistenceService userPersistenceService
@@ -85,6 +102,8 @@ classDiagram
     }
   }
 
+  UserController ..> CreateUserCommand
+  UserController ..> UpdateUserCommand
   UserController ..> UserService
   UserController ..> User
   UserService ..> UserPersistenceService
@@ -94,6 +113,7 @@ classDiagram
   UserPersistenceService ..> UserRepository
   UserPersistenceService ..> User
   UserRepository ..> UserEntity
-  User ..> Role
-  UserEntity ..> Role
+  CreateUserCommand *.. Role
+  User *-- Role
+  UserEntity *-- Role
 ```
