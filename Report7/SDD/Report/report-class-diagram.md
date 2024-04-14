@@ -6,16 +6,11 @@ classDiagram
   namespace event {
     class RmsHandler {
       <<interface>>
-      +handle(plcData) void
+      + handle(plcData) void
     }
 
     class ReportHandler {
-     - ReportSchedulePersistenceService reportSchedulePersistenceService
-     - ReportService reportService
-     - ReportExcelProcessor processor
-     - BlueprintPersistenceService blueprintService
-     - PlcConnector plcConnector
-     + handle(context, response) void
+      - ReportService reportService
     } 
   }
 
@@ -59,12 +54,17 @@ ReportPersistenceService ..> ReportRepository
     class BlueprintPersistenceService {
          - ReportService reportService
     }
+
+    class ReportPersistenceService {
+      - ReportService reportService
+    }
     
   }
 
     namespace api {
         class PlcConnector  {
         <<interface>>
+         - ReportService reportService
         }
     }
 
@@ -78,17 +78,63 @@ ReportPersistenceService ..> ReportRepository
 
     namespace repository {
         class BlueprintRepository {
-        <<interface>>  
+        <<interface>>
+         - ReportService reportService  
         }
 
         class ReportRepository {
-        <<interface>>  
+        <<interface>>
+         - ReportService reportService  
         }
         class ReportScheduleRepository {
-        <<interface>>   
+        <<interface>>
+         - ReportService reportService   
         }
         class ReportRowRepository {
-        <<interface>>   
+        <<interface>>
+         - ReportService reportService   
         }
     }
+
+    ReportRepository ..> Report
+    ReportScheduleRepository ..> ReportSchedule
+    ReportRowRepository ..> ReportRow
+
+    namespace MODEL {
+      class Report {
+         - Long id
+      }
+     
+     class ReportRow {
+      - Long id
+     }
+
+     class ReportSchedule {
+      - Long id
+     }
+
+     class ReportType {
+      -Long id
+      -String name
+     }
+
+     class ReportRowPeriod {
+      <<enumeration>>
+      OLD
+     }
+
+     class ReportRowShift {
+      <<enumeration>>
+      I
+      II
+     }
+    }
+
+  Report *-- ReportRow
+  Report *-- ReportType
+  ReportSchedule *-- ReportRowPeriod
+  ReportSchedule *-- ReportRowShift
+  ReportSchedule *-- ReportType
+  
+  ReportRow *-- ReportRowShift
   ```
