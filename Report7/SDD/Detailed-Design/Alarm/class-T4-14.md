@@ -157,7 +157,7 @@ classDiagram
       CUSTOM
     } 
 
-    class TagConfiguration {
+    class SensorConfiguration {
       -Long id
       -String address
       -double x
@@ -169,5 +169,5 @@ classDiagram
 
   AlarmCondition *-- AlarmAction
   AlarmCondition *-- AlarmType
-  AlarmCondition o-- TagConfiguration
+  AlarmCondition o-- SensorConfiguration
 ```
