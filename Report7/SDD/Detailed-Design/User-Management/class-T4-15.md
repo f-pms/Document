@@ -6,15 +6,12 @@ classDiagram
   namespace coreapi_controller_v1 {
     class UserController {
       - UserService userService
-      - ModelMapper modelMapper
       + get(userId) User
       + create(createUserCommand) User
       + update(userId, updateUserCommand) User
       + delete(userId) void 
     }
-  }
 
-  namespace coreapi_controller_v1_request_auth {
     class CreateUserCommand {
       - String username
       - String password
@@ -23,7 +20,7 @@ classDiagram
       - Role role
     }
 
-  class UpdateUserCommand {
+    class UpdateUserCommand {
       - String oldPassword
       - String password
       - String fullName
@@ -31,11 +28,10 @@ classDiagram
     }
   }
 
-  namespace coreapi_service_auth {
+  namespace coreapi_service {
     class UserService {
       - UserPersistenceService userPersistenceService
       - UserValidationService userValidationService
-      - ModelMapper modelMapper
       + findById(userId) User
       + create(userToCreate) User
       + update(userId, updateUserCommand) User
@@ -64,14 +60,6 @@ classDiagram
     }
   }
 
-  namespace integration_db_repository {
-    class UserRepository {
-      <<interface>>
-      UserEntity findByUsername(username)
-      UserEntity findByEmail(email)
-    }
-  }
-
   namespace coremodel {
     class User {
       - Long id
@@ -81,13 +69,19 @@ classDiagram
       - String password
       - Role role
     }
-  }
 
-  namespace coremodel_enums {
     class Role {
       <<Enumeration>>
       ADMIN
       SUPERVISOR
+    }
+  }
+
+  namespace integration_db_repository {
+    class UserRepository {
+      <<interface>>
+      UserEntity findByUsername(username)
+      UserEntity findByEmail(email)
     }
   }
 
