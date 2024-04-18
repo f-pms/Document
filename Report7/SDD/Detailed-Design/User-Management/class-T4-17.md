@@ -101,9 +101,9 @@ classDiagram
   UserController ..> UserService
   UserController ..> User
   UserService ..> UserPersistenceService
-  UserService ..> User
   UserService ..> UserValidationService
   UserService ..> User
+  UserValidationService ..> UserPersistenceService
   UserPersistenceService ..> UserRepository
   UserPersistenceService ..> User
   UserRepository ..> UserEntity
