@@ -1,7 +1,7 @@
 ```mermaid
 sequenceDiagram 
 title RMS - Report Handling Sequence
-  actor Time as Every second
+  actor Time as System Handler
   participant ReportHandler
   participant BlueprintPersistenceService
   participant ReportSchedulePersistenceService
@@ -10,6 +10,7 @@ title RMS - Report Handling Sequence
   participant PlcConnector
   participant BlueprintRepository
 
+loop for every seconds
     Time ->>+ ReportHandler: handle(context, response)
     ReportHandler ->>+ BlueprintPersistenceService: getAll()
     BlueprintPersistenceService ->>+ BlueprintRepository: findAll()
@@ -43,5 +44,6 @@ title RMS - Report Handling Sequence
             ReportPersistenceService -->>- ReportService: return result
             ReportService -->>- ReportHandler: return result
         end
+    end
     end
 ```
