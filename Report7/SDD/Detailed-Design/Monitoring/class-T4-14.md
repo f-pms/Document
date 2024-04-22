@@ -6,14 +6,14 @@ classDiagram
   namespace coreapi_event {
     class RmsHandler {
       <<interface>>
-      +handle(plcData) void
+      +handle(context, response) void
     }
 
     class MonitorHandler {
       -BlueprintPersistenceService blueprintService
       -DataProcessor dataProcessor
       -WebSocketService webSocketService
-      +handle(plcData) void
+      +handle(context, response) void
     }
 
   }
@@ -47,15 +47,15 @@ classDiagram
       -Long id
       -String name 
       -String description
-      -List~TagConfiguration~ tagConfigurations
+      -List~SensorConfiguration~ SensorConfigurations
     }
 
-    class TagConfiguration {
+    class SensorConfiguration {
       -Long id 
       -String address
       -double x 
       -double y 
     }
   }
-  Blueprint "1" *-- "0..n" TagConfiguration: belongs to
+  Blueprint "1" *-- "0..n" SensorConfiguration: belongs to
 ```

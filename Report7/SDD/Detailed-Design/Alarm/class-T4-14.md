@@ -6,21 +6,21 @@ classDiagram
   namespace event {
     class RmsHandler {
       <<interface>>
-      +handle(plcData) void
+      +handle(context, response) void
     }
 
     class AlarmConditionHandler {
       -AlarmPersistenceService alarmPersistenceService
       -AlarmStore alarmStore
       -AlarmService alarmService
-      +handle(plcData) void
+      +handle(context, response) void
     } 
 
     class AlarmHistoryHandler{
       -AlarmPersistenceService alarmPersistenceService
       -AlarmService alarmService
       -WebSocketService webSocketService
-      +handle(plcData) void
+      +handle(context, response) void
     }
   }
 
@@ -157,7 +157,7 @@ classDiagram
       CUSTOM
     } 
 
-    class TagConfiguration {
+    class SensorConfiguration {
       -Long id
       -String address
       -double x
@@ -168,6 +168,6 @@ classDiagram
   AlarmAction *-- AlarmActionType
 
   AlarmCondition *-- AlarmAction
-  AlarmCondition *-- AlarmType
-  AlarmCondition o-- TagConfiguration
+  AlarmCondition --> AlarmType
+  AlarmCondition o-- SensorConfiguration
 ```

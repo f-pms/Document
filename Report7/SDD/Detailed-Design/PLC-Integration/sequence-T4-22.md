@@ -1,7 +1,7 @@
 ```mermaid
 sequenceDiagram 
   title RMS - PLC Integration Sequence
-  actor Init as Start Application
+  actor Init as System Handler
   participant HbcScraper
   participant HbcScrapeJob
   participant PlcDataSource
@@ -17,6 +17,7 @@ sequenceDiagram
   participant ReportHandler
 
   Init ->>+ HbcScraper: start()
+  Note over Init,HbcScraper: This method only executes once when the application is bootstrapping
   HbcScraper ->>+ HbcScrapeJob: getTags()
   HbcScrapeJob ->>+ PlcDataSource: getTags()
   PlcDataSource ->>+ BlueprintPersistenceService: getAll()

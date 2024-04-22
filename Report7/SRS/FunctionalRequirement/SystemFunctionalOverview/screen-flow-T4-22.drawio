@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-07T13:48:00.523Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="BvOi8YUu2a-otde3dXl7" version="24.2.2" type="device">
+<mxfile host="Electron" modified="2024-04-22T18:41:52.485Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="0vc0K8wX0XlV2myPUZFm" version="23.1.5" type="device">
   <diagram name="Page-1" id="oyefZyvbCmtk_aO8xllv">
-    <mxGraphModel dx="719" dy="378" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1709" dy="999" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -100,7 +100,7 @@
         <mxCell id="MegoHZjVP08y1ZtQDZGC-57" value="Create new by duplicating" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
           <mxGeometry x="806.94" y="616" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="MegoHZjVP08y1ZtQDZGC-58" value="Disable Alarm Condition" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
+        <mxCell id="MegoHZjVP08y1ZtQDZGC-58" value="Delete Alarm Condition" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
           <mxGeometry x="806.94" y="706" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="m07zjkyg0_wwbzmGlQm7-3" value="View Details Alarm History" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
@@ -140,7 +140,7 @@
             <mxPoint x="1006.94" y="566" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m07zjkyg0_wwbzmGlQm7-11" value="Confirm Disable Alarm Configuration Popup" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="m07zjkyg0_wwbzmGlQm7-11" value="Confirm Delete Alarm Configuration Popup" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="996.8800000000001" y="706" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="m07zjkyg0_wwbzmGlQm7-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="MegoHZjVP08y1ZtQDZGC-58" target="m07zjkyg0_wwbzmGlQm7-11" edge="1">
@@ -288,7 +288,7 @@
         <mxCell id="m07zjkyg0_wwbzmGlQm7-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="m07zjkyg0_wwbzmGlQm7-62" target="m07zjkyg0_wwbzmGlQm7-37" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="m07zjkyg0_wwbzmGlQm7-62" value="Historical Reports Staistic" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="m07zjkyg0_wwbzmGlQm7-62" value="Historical Reports Statistics" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="576.88" y="1008" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="m07zjkyg0_wwbzmGlQm7-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="MegoHZjVP08y1ZtQDZGC-2" target="m07zjkyg0_wwbzmGlQm7-17" edge="1">
